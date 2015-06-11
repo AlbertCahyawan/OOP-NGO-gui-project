@@ -23,17 +23,18 @@ public class NgoGui extends javax.swing.JFrame {
     String AddOrganizationNamesearch;
     String ageSearchAddOrganizationIdsearch; 
     String searchString;
+    boolean Find;
     boolean Login = false;
     boolean adminauthorization = false;
     boolean NewOrganization = true;
     boolean EditOrganization = false;
-    Authorization AdminAuthorization = new Authorization (adminauthorization,Login,NewOrganization,EditOrganization);
+    Authorization AdminAuthorization = new Authorization (adminauthorization,Login,NewOrganization,EditOrganization,Find);
     public NgoGui() throws IOException  {
         initComponents();
+        Maketxtfile();
         Blacklist();
         showallorganization();
         DeleteFile();
-        JOptionPane.showMessageDialog(null, "test");
         MainMenu.setVisible(true);
         HiddenLogin.setVisible(false);
         SearchOrganization.setVisible(false);
@@ -43,6 +44,7 @@ public class NgoGui extends javax.swing.JFrame {
         AddMember.setVisible(false);
         AddAdmin.setVisible(false);
         AddAdminbtn1.setVisible(false);
+
     }
    
     @SuppressWarnings("unchecked")
@@ -100,6 +102,7 @@ public class NgoGui extends javax.swing.JFrame {
         Passwordlbl = new javax.swing.JLabel();
         Usernamelbl1 = new javax.swing.JLabel();
         Wronglbl = new javax.swing.JLabel();
+        BackMenubtn3 = new javax.swing.JButton();
         AddOrganization = new javax.swing.JPanel();
         AddnewOrganizationbtnsave = new javax.swing.JButton();
         MainMenubtn4 = new javax.swing.JButton();
@@ -231,7 +234,7 @@ public class NgoGui extends javax.swing.JFrame {
                         .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Exitbtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                             .addComponent(AddOrganizationbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
 
         Exitbtn2.setText("Exit");
@@ -361,7 +364,7 @@ public class NgoGui extends javax.swing.JFrame {
                     .addComponent(OrganizationChairpersonTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SearchOrganizationLayout.createSequentialGroup()
                         .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -378,7 +381,7 @@ public class NgoGui extends javax.swing.JFrame {
                         .addComponent(OrganizationEmailTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(OrganizationContactTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         MemberNamelbl.setText("Member Name");
@@ -570,6 +573,13 @@ public class NgoGui extends javax.swing.JFrame {
 
         Wronglbl.setForeground(new java.awt.Color(255, 0, 0));
 
+        BackMenubtn3.setText("Main Menu");
+        BackMenubtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackMenubtn3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout HiddenLoginLayout = new javax.swing.GroupLayout(HiddenLogin);
         HiddenLogin.setLayout(HiddenLoginLayout);
         HiddenLoginLayout.setHorizontalGroup(
@@ -588,9 +598,11 @@ public class NgoGui extends javax.swing.JFrame {
                         .addComponent(Wronglbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(AdminPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(HiddenLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Passwordlbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Usernamelbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(HiddenLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(HiddenLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(Passwordlbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Usernamelbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BackMenubtn3))
                 .addGap(42, 42, 42))
         );
         HiddenLoginLayout.setVerticalGroup(
@@ -611,8 +623,9 @@ public class NgoGui extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(HiddenLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Loginbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Wronglbl, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(255, Short.MAX_VALUE))
+                    .addComponent(Wronglbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(BackMenubtn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(324, Short.MAX_VALUE))
         );
 
         Passwordlbl.getAccessibleContext().setAccessibleName("Usernamelbl");
@@ -1058,7 +1071,7 @@ public class NgoGui extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(17, 17, 17)
                     .addComponent(AddOrganization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(66, Short.MAX_VALUE)))
+                    .addContainerGap(135, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1108,12 +1121,12 @@ public class NgoGui extends javax.swing.JFrame {
 }
     private void FindingOrganization() throws IOException{
         String Name;
-        String  repeat = "";;
+        String  repeat = "";
         try{
              BufferedReader bro = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
-            while((AddOrganizationNamesearch = bro.readLine())!= null){
-                if (AddOrganizationNamesearch.contains(SearchOrganizationtxt.getText())){  
-                 BufferedReader BrOM = new BufferedReader(new FileReader("C:\\NGO Project\\"+SearchOrganizationtxt.getText()+".txt"));
+                while((AddOrganizationNamesearch = bro.readLine())!= null){
+                if (AddOrganizationNamesearch.equalsIgnoreCase(SearchOrganizationtxt.getText())){  
+                  BufferedReader BrOM = new BufferedReader(new FileReader("C:\\NGO Project\\"+SearchOrganizationtxt.getText()+".txt"));
                   OrganizationNameTxt.setText(BrOM.readLine());
                   OrganizationContactTxt.setText(BrOM.readLine());
                   OrganizationChairpersonTxt.setText(BrOM.readLine());
@@ -1121,9 +1134,13 @@ public class NgoGui extends javax.swing.JFrame {
                   OrganizationAddressTxt.setText(BrOM.readLine());
                   while((Name = BrOM.readLine())!=null){
                   repeat +=("Name:"+Name+"\n");    
-                  MemberList.setText(repeat);                    
+                  MemberList.setText(repeat);
                 }  
-                    } 
+                Find = true;
+                break;  
+                }else{
+                    Find = false;
+                } 
                 }
             }catch (FileNotFoundException ex) {       
             Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
@@ -1131,7 +1148,6 @@ public class NgoGui extends javax.swing.JFrame {
     }
        private void FindMember() throws IOException{
         String Name;
-        int found = 0;
         try{
              BufferedReader BrFM = new BufferedReader(new FileReader("C:\\NGO Project\\"+OrganizationNameTxt.getText()+".txt"));
             BrFM.readLine();
@@ -1146,7 +1162,7 @@ public class NgoGui extends javax.swing.JFrame {
                   MemberEmailTxt.setText(BrFM.readLine());
                   MemberPhoneTxt.setText(BrFM.readLine());
                   MemberHomenumberTxt.setText(BrFM.readLine());
-                  found = 1;
+                  Find = true;
                   break;
                   }
                 else{
@@ -1154,11 +1170,12 @@ public class NgoGui extends javax.swing.JFrame {
                     BrFM.readLine();
                     BrFM.readLine();
                     BrFM.readLine();
+                    Find = false;
                 }
                 }
-             if(found == 0){
-            JOptionPane.showMessageDialog(null, "Data not found");
-        }
+             if(Find == false){     
+            JOptionPane.showMessageDialog(null, "Member are not found");
+            }
             }catch (FileNotFoundException ex) {       
             Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
         }            
@@ -1186,6 +1203,8 @@ public class NgoGui extends javax.swing.JFrame {
             AddOrganization.setVisible(false);
             AddMember.setVisible(false);
             AddAdmin.setVisible(false);
+            AddOrganizationbtn.setVisible(true);
+            AddAdminbtn1.setVisible(true);
         }
     }
     
@@ -1291,7 +1310,26 @@ public class NgoGui extends javax.swing.JFrame {
     private void LoginbtnKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LoginbtnKeyPressed
         
     }//GEN-LAST:event_LoginbtnKeyPressed
-
+    
+    private void Maketxtfile(){
+        int count = 0;
+        int count1 = 3;
+        ArrayList<String> FileList = new ArrayList<String>();
+        FileList.add("NgoAdmin.txt");
+        FileList.add("Delete.txt");
+        FileList.add("Organizationlist.txt");
+        try{
+            while (count != count1 ){
+            BufferedWriter BwMTF = new BufferedWriter(new FileWriter("C:\\NGO Project\\"+FileList.get(count),true));
+            BwMTF.close();
+            count++; 
+            }
+        }catch (FileNotFoundException ex) {
+            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     private void SearchOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchOrganizationbtnActionPerformed
       if (SearchOrganizationtxt.getText().equalsIgnoreCase("Operation Admin"))
       {
@@ -1304,11 +1342,8 @@ public class NgoGui extends javax.swing.JFrame {
       else{
           try {
               FindingOrganization();
-              
-          } catch (IOException ex) {
-              Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-          }
-      if(adminauthorization = false){
+              if ( Find == true){    
+      if(adminauthorization == false){
       EditOrganizationbtn.setVisible(false);
       DeleteOrganizationbtn.setVisible(false);
       MainMenu.setVisible(false);
@@ -1318,7 +1353,9 @@ public class NgoGui extends javax.swing.JFrame {
       AddOrganization.setVisible(false);
       AddMember.setVisible(false);
       AddAdmin.setVisible(false);
-      }else if (adminauthorization = true){
+      EditOrganizationbtn.setVisible(false);
+      AddMemberbtn.setVisible(false);
+      }else if (adminauthorization == true){
       MainMenu.setVisible(false);
       HiddenLogin.setVisible(false);
       SearchOrganization.setVisible(true);
@@ -1326,7 +1363,15 @@ public class NgoGui extends javax.swing.JFrame {
       AddOrganization.setVisible(false);
       AddMember.setVisible(false);
       AddAdmin.setVisible(false);
-          
+      EditOrganizationbtn.setVisible(true);
+      AddMemberbtn.setVisible(true);
+      DeleteOrganizationbtn.setVisible(true);
+      }
+      }else{
+          JOptionPane.showMessageDialog(null,"Organization not found");
+      }
+      } catch (IOException ex) {
+              Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
       }
       }
       
@@ -1344,14 +1389,7 @@ public class NgoGui extends javax.swing.JFrame {
 
     private void MainMenubtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainMenubtn4ActionPerformed
         showallorganization();
-        MainMenu.setVisible(true);
-        HiddenLogin.setVisible(false);
-        SearchOrganization.setVisible(false);
-        SearchMember.setVisible(false);
-        AddOrganization.setVisible(false);
-        AddOrganizationbtn.setVisible(true);
-        AddMember.setVisible(false);
-        AddAdmin.setVisible(false);
+        Backtomainmenu();
     }//GEN-LAST:event_MainMenubtn4ActionPerformed
 
     private void AddnewOrganizationbtnsaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddnewOrganizationbtnsaveActionPerformed
@@ -1368,7 +1406,7 @@ public class NgoGui extends javax.swing.JFrame {
                 if(AddOrganizationNametxt.getText().equals(Name)){
                    NewOrganization = false; 
                 }else{
-                    NewOrganization = true;
+                   NewOrganization = true;
                 }
             }
         } catch (FileNotFoundException ex) {
@@ -1377,7 +1415,7 @@ public class NgoGui extends javax.swing.JFrame {
             Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        if ((NewOrganization = true)&&(!AddOrganizationNametxt.getText().isEmpty())&&(!AddOrganizationContacttxt.getText().isEmpty())&&(!AddOrganizationChairpersontxt.getText().isEmpty())&&(!AddOrganizationEmailtxt.getText().isEmpty())&&(!AddOrganizationAddresstxt.getText().isEmpty())){
+        if ((NewOrganization == true)&&(!AddOrganizationNametxt.getText().isEmpty())&&(!AddOrganizationContacttxt.getText().isEmpty())&&(!AddOrganizationChairpersontxt.getText().isEmpty())&&(!AddOrganizationEmailtxt.getText().isEmpty())&&(!AddOrganizationAddresstxt.getText().isEmpty())){
         try {
             PrintWriter PwOM = new PrintWriter(new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt",true)));
             PwOM.println(AddOrganizationNametxt.getText());
@@ -1416,7 +1454,12 @@ public class NgoGui extends javax.swing.JFrame {
              OrganizationEmaillbl.setText("Please fill the Email");   
             }
             if(AddOrganizationAddresstxt.getText().isEmpty()){
-             OrganizationAddresslbl.setText("Please fill the Address");   
+             OrganizationAddresslbl.setText("Please fill the Address");
+            if(NewOrganization == false){
+             OrganizationNamelbl.setText("Organization Already Exist");   
+             JOptionPane.showMessageDialog(null,"Organization Already Exist");
+             AddOrganizationNametxt.setText("");
+            }
             }
         }
     }//GEN-LAST:event_AddnewOrganizationbtnsaveActionPerformed
@@ -1430,79 +1473,49 @@ public class NgoGui extends javax.swing.JFrame {
     }//GEN-LAST:event_AdminPasswordActionPerformed
 
     private void EditMemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditMemberActionPerformed
- /*       String MemberName;
+        String MemberName;
         int count = 0;
         int  count1 = 4;
         ArrayList<String> list = new ArrayList<String>();
         if (EditOrganization == false){
             JOptionPane.showMessageDialog(null, "Success");
             Whitelist();
+            TempOrganizationName = MemberNameTxt.getText();
             EditOrganization = true; 
         }else if(EditOrganization == true){
-           try {
-                BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
-                BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));    
-                    while((MemberName = brD.readLine()) != null){
-                        //If Match Just Continue
-                        if(MemberName.equalsIgnoreCase(TempOrganizationName) ){
-                            bwTemp.write(MemberNameTxt.getText());
-                            bwTemp.newLine();
-                        }else{
-                            bwTemp.write(MemberName);
-                            bwTemp.newLine();
-                        }
-                    }
-                    brD.close();
-                    bwTemp.close();
-                    
-
-                    BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
-                    BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
-                    while((MemberName = brTemp.readLine()) != null){
-                            writeAgain.write(MemberName);
-                            writeAgain.newLine();
-                    }
-                    brTemp.close();
-                    writeAgain.close();
-                    
-                   BufferedReader BrEO = new BufferedReader(new FileReader("C:\\NGO Project\\"+TempOrganizationName+".txt"));
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   list.add(OrganizationNameTxt.getText());
-                   list.add(OrganizationEmailTxt.getText());
-                   list.add(OrganizationChairpersonTxt.getText());
-                   list.add(OrganizationContactTxt.getText());
-                   list.add(OrganizationAddressTxt.getText());
-                   while ((OrganizationName = BrEO.readLine())!= null){
+           try {     
+                   BufferedReader BrEO = new BufferedReader(new FileReader("C:\\NGO Project\\"+OrganizationNameTxt.getText()+".txt"));
+                   while ((MemberName = BrEO.readLine())!= null){
+                   if((TempOrganizationName.equalsIgnoreCase(MemberName))){
+                   list.add(MemberNameTxt.getText());
+                   list.add(MemberAddressTxt.getText());
+                   list.add(MemberEmailTxt.getText());
+                   list.add(MemberPhoneTxt.getText());
+                   list.add(MemberHomenumberTxt.getText());
+                   }else
+                   {
                    list.add(MemberName);
                    count1++;
                    }
+                   }
                    BrEO.close();
                    BufferedWriter BwEOT= new BufferedWriter(new FileWriter("C:\\NGO Project\\"+OrganizationNameTxt.getText()+".txt"));
-                   JOptionPane.showMessageDialog(null,list.get(count));
                    while (count != count1){
                    BwEOT.write(list.get(count));
                    BwEOT.newLine();
                    count++;
                    }
                    list.clear();
-                    BwEOT.close();
+                   BwEOT.close();
                    EditOrganization = false;
                    Blacklist();
-                   File fdelete = new File("C:\\NGO Project\\"+TempOrganizationName+".txt");
-                   fdelete.delete();
                    JOptionPane.showMessageDialog(null, "Success");
         } catch (FileNotFoundException ex) {
                 Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
             }        
-    }
     }                                                   
-*/
     }//GEN-LAST:event_EditMemberActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1541,13 +1554,23 @@ public class NgoGui extends javax.swing.JFrame {
         String OrganizationName;
         int count = 0;
         int  count1 = 4;
+        Find = false;
         if (EditOrganization == false){
             JOptionPane.showMessageDialog(null, "Success");
             Whitelist();
             EditOrganization = true;
             TempOrganizationName = OrganizationNameTxt.getText();
         }else if(EditOrganization == true){
-           try {
+           try {BufferedReader brCF = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
+                while((OrganizationName = brCF.readLine()) != null){
+                    if(OrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())){
+                        Find = false;
+                        JOptionPane.showMessageDialog(null,"Organziation Name already exist");
+                       }else{
+                        Find = true;
+                    }
+                }
+                if(Find == true){ 
                 BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
                 BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));    
                     while((OrganizationName = brD.readLine()) != null){
@@ -1563,7 +1586,6 @@ public class NgoGui extends javax.swing.JFrame {
                     brD.close();
                     bwTemp.close();
                     
-
                     BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
                     BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
                     while((OrganizationName = brTemp.readLine()) != null){
@@ -1608,6 +1630,7 @@ public class NgoGui extends javax.swing.JFrame {
                    }else{
                    BwD.close();
                    }
+                }
         } catch (FileNotFoundException ex) {
                 Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
@@ -1662,7 +1685,13 @@ public class NgoGui extends javax.swing.JFrame {
     }//GEN-LAST:event_DeleteOrganizationbtnActionPerformed
 
     private void SeachMemberbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeachMemberbtnActionPerformed
-        if(adminauthorization = false){
+        try {
+            FindMember();
+        } catch (IOException ex) {
+            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        if(Find == true){
+        if(adminauthorization == false){
             MainMenu.setVisible(false);
             HiddenLogin.setVisible(false);
             SearchOrganization.setVisible(false);
@@ -1672,7 +1701,7 @@ public class NgoGui extends javax.swing.JFrame {
             AddMember.setVisible(false);
             AddAdmin.setVisible(false);
         }
-        else if(adminauthorization = true){
+        else if(adminauthorization == true){
             MainMenu.setVisible(false);
             HiddenLogin.setVisible(false);
             SearchOrganization.setVisible(false);
@@ -1681,11 +1710,7 @@ public class NgoGui extends javax.swing.JFrame {
             AddOrganization.setVisible(false);
             AddMember.setVisible(false);
             AddAdmin.setVisible(false);
-        }
-        try {
-            FindMember();
-        } catch (IOException ex) {
-            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }//GEN-LAST:event_SeachMemberbtnActionPerformed
 
@@ -1736,22 +1761,37 @@ public class NgoGui extends javax.swing.JFrame {
     }//GEN-LAST:event_AdminUsernametxtActionPerformed
 
     private void AddAdminbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddAdminbtnActionPerformed
+                String Name;
+                int found = 0;
                 AdminUsernamelbl.setText("");
                 AdminPasswordlbl.setText("");
                 AdminRetypePasswordlbl.setText("");
         if((!AdminUsernametxt.getText().isEmpty()) && (!AdminPasswordtxt.getText().isEmpty()) && (AdminPasswordtxt.getText().equalsIgnoreCase(AdminRetypePasswordtxt.getText()) ) ){
             try{
+             BufferedWriter BwAF = new BufferedWriter(new FileWriter("C:\\NGO Project\\NgoAdmin.txt",true));
+             BwAF.close();
+             BufferedReader BrNgoAdmin = new BufferedReader(new FileReader("C:\\NGO Project\\NgoAdmin.txt"));
+             while ((Name = BrNgoAdmin.readLine())!= null && BrNgoAdmin != null){
+                     BrNgoAdmin.readLine();   
+                     if(Name.equalsIgnoreCase(AdminUsernametxt.getText())){
+                         found = 1;
+                     }
+            }
+             BrNgoAdmin.close();
+             if (found == 0 ){
              PrintWriter PwNgoAdmin = new PrintWriter(new BufferedWriter(new FileWriter("C:\\NGO Project\\NgoAdmin.txt",true)));
              PwNgoAdmin.println(AdminUsernametxt.getText());
              PwNgoAdmin.println(AdminPasswordtxt.getText());
-
-            AdminUsernametxt.setText("");
-            AdminPasswordtxt.setText("");
-            AdminRetypePasswordtxt.setText("");
-
-            JOptionPane.showMessageDialog(null, "New Admin Created!");
-
-            PwNgoAdmin.close();
+             AdminUsernametxt.setText("");
+             AdminPasswordtxt.setText("");
+             AdminRetypePasswordtxt.setText("");
+             
+             JOptionPane.showMessageDialog(null, "New Admin Created!");
+             PwNgoAdmin.close();
+            }else{
+                 AdminUsernametxt.setText("");
+                 JOptionPane.showMessageDialog(null, "This username has already been used");
+             }
         }catch (IOException ex) {
             Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -1814,35 +1854,47 @@ public class NgoGui extends javax.swing.JFrame {
         try {
             BufferedReader BrAM = new BufferedReader(new FileReader("C:\\NGO Project\\"+TempOrganizationName+".txt"));
             while((repeat = BrAM.readLine())!=null){
+                if(AddMemberNametxt.getText().equalsIgnoreCase(repeat)){
+                    Find = false;
+                    break;
+                }else{
                 List.add(repeat);
-                count1++;
+                count1++; 
+                Find = true;
+                }
         }
+            if(Find == true){
             List.add(AddMemberNametxt.getText());
             List.add(AddMemberAddresstxt.getText());
             List.add(AddMemberEmailtxt.getText());
             List.add(AddMemberPhone.getText());
             List.add(AddMemberHomenumbertxt.getText());
-            BufferedWriter BwAM = new BufferedWriter(new BufferedWriter(new FileWriter("C:\\NGO Project\\"+TempOrganizationName+".txt",true)));
+            BufferedWriter BwAM = new BufferedWriter(new BufferedWriter(new FileWriter("C:\\NGO Project\\"+TempOrganizationName+".txt")));
             while(count != count1){
             BwAM.write(List.get(count));
             BwAM.newLine();
             count++;
             }
-            List.clear();
+            JOptionPane.showMessageDialog(null, "Save Data Successful!");
+
+            BwAM.close();
+            }else{
+                JOptionPane.showMessageDialog(null, "Member with same name are ");
+            }
             AddMemberNametxt.setText("");
             AddMemberAddresstxt.setText("");
             AddMemberEmailtxt.setText("");
             AddMemberPhone.setText("");
             AddMemberHomenumbertxt.setText("");
-
-            JOptionPane.showMessageDialog(null, "Save Data Successful!");
-
-            BwAM.close();
-
         } catch (IOException ex) {
             Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
         }
+        List.clear();
     }//GEN-LAST:event_AddmemberActionPerformed
+
+    private void BackMenubtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackMenubtn3ActionPerformed
+        Backtomainmenu();
+    }//GEN-LAST:event_BackMenubtn3ActionPerformed
 
     public static void main(String args[]) {
             
@@ -1916,6 +1968,7 @@ public class NgoGui extends javax.swing.JFrame {
     private javax.swing.JTextField AdminUsernametxt;
     private javax.swing.JButton BackMenubtn1;
     private javax.swing.JButton BackMenubtn2;
+    private javax.swing.JButton BackMenubtn3;
     private javax.swing.JButton DeleteOrganizationbtn;
     private javax.swing.JButton EditMember;
     private javax.swing.JButton EditOrganizationbtn;
