@@ -120,34 +120,6 @@ public class NgoGui extends javax.swing.JFrame {
         Usernamelbl1 = new javax.swing.JLabel();
         Wronglbl = new javax.swing.JLabel();
         BackMenubtn3 = new javax.swing.JButton();
-        AddOrganization = new javax.swing.JPanel();
-        AddnewOrganizationbtnsave = new javax.swing.JButton();
-        MainMenubtn4 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        AddOrganizationNametxt = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        AddOrganizationContacttxt = new javax.swing.JTextField();
-        AddOrganizationChairpersontxt = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        AddOrganizationEmailtxt = new javax.swing.JTextField();
-        OrganizationNamelbl = new javax.swing.JLabel();
-        OrganizationContactlbl = new javax.swing.JLabel();
-        OrganizationChairpersonlbl = new javax.swing.JLabel();
-        OrganizationAddressProvincelbl = new javax.swing.JLabel();
-        OrganizationEmaillbl = new javax.swing.JLabel();
-        AddOrganizationAddressCitytxt = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        AddOrganizationAddressProvincetxt = new javax.swing.JTextField();
-        AddOrganizationAddressPostcodetxt = new javax.swing.JTextField();
-        AddOrganizationAddressStreettxt = new javax.swing.JTextField();
-        OrganizationAddressPostcodelbl = new javax.swing.JLabel();
-        OrganizationAddressCitylbl = new javax.swing.JLabel();
-        OrganizationAddressStreetlbl = new javax.swing.JLabel();
         AddMember = new javax.swing.JPanel();
         MemberFirsyNamelbl1 = new javax.swing.JLabel();
         MemberIdlbl1 = new javax.swing.JLabel();
@@ -179,6 +151,34 @@ public class NgoGui extends javax.swing.JFrame {
         AddMemberLastNamelbl = new javax.swing.JLabel();
         AddMemberEmaillbl = new javax.swing.JLabel();
         AddMemberAddresslbl = new javax.swing.JLabel();
+        AddOrganization = new javax.swing.JPanel();
+        AddnewOrganizationbtnsave = new javax.swing.JButton();
+        MainMenubtn4 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        AddOrganizationNametxt = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        AddOrganizationContacttxt = new javax.swing.JTextField();
+        AddOrganizationChairpersontxt = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        AddOrganizationEmailtxt = new javax.swing.JTextField();
+        OrganizationNamelbl = new javax.swing.JLabel();
+        OrganizationContactlbl = new javax.swing.JLabel();
+        OrganizationChairpersonlbl = new javax.swing.JLabel();
+        OrganizationAddressProvincelbl = new javax.swing.JLabel();
+        OrganizationEmaillbl = new javax.swing.JLabel();
+        AddOrganizationAddressCitytxt = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        AddOrganizationAddressProvincetxt = new javax.swing.JTextField();
+        AddOrganizationAddressPostcodetxt = new javax.swing.JTextField();
+        AddOrganizationAddressStreettxt = new javax.swing.JTextField();
+        OrganizationAddressPostcodelbl = new javax.swing.JLabel();
+        OrganizationAddressCitylbl = new javax.swing.JLabel();
+        OrganizationAddressStreetlbl = new javax.swing.JLabel();
         AddAdmin = new javax.swing.JPanel();
         AddAdminbtn = new javax.swing.JButton();
         AdminUsernametxt = new javax.swing.JTextField();
@@ -246,12 +246,11 @@ public class NgoGui extends javax.swing.JFrame {
         MainMenu.setLayout(MainMenuLayout);
         MainMenuLayout.setHorizontalGroup(
             MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
+            .addGroup(MainMenuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Searchpn)
                     .addGroup(MainMenuLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(Logoutbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AddAdminbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,7 +260,7 @@ public class NgoGui extends javax.swing.JFrame {
                         .addComponent(Exitbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(MainMenuLayout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
                         .addComponent(SearchOrganizationbtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(SearchOrganizationtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -270,7 +269,7 @@ public class NgoGui extends javax.swing.JFrame {
         MainMenuLayout.setVerticalGroup(
             MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainMenuLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(20, 20, 20)
                 .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -286,7 +285,7 @@ public class NgoGui extends javax.swing.JFrame {
                     .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(Exitbtn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(AddOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         Exitbtn2.setText("Exit");
@@ -352,14 +351,14 @@ public class NgoGui extends javax.swing.JFrame {
 
         OrganizationAddressTxt.setText("Address");
 
-        OrganizationEmailTxt.setText("Email");
+        OrganizationEmailTxt.setText("Email:");
         OrganizationEmailTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OrganizationEmailTxtActionPerformed(evt);
             }
         });
 
-        OrganizationContactTxt.setText("Contact number");
+        OrganizationContactTxt.setText("Contact number:");
         OrganizationContactTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OrganizationContactTxtActionPerformed(evt);
@@ -388,65 +387,69 @@ public class NgoGui extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                        .addComponent(OrganizationIdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(OrganizationNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(63, 63, 63)
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(OrganizationChairpersonTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(SearchMemberlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
                         .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                                .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                                        .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                                                .addGap(14, 14, 14)
-                                                .addComponent(jLabel19))
-                                            .addComponent(jLabel20))
+                                .addComponent(OrganizationIdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(OrganizationNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(63, 63, 63)
+                                .addComponent(jLabel18))
+                            .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(OrganizationChairpersonTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SeachMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(SearchMemberlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                                .addComponent(SearchMembertxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                        .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(SearchOrganizationLayout.createSequentialGroup()
+                                .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SearchOrganizationLayout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jLabel19)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(OrganizationEmailTxt))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SearchOrganizationLayout.createSequentialGroup()
+                                        .addComponent(jLabel20)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(OrganizationEmailTxt)
-                                            .addComponent(OrganizationContactTxt)))
-                                    .addComponent(OrganizationAddressTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(43, 43, 43)
+                                        .addComponent(OrganizationContactTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(OrganizationAddressTxt))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(EditOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(BackMenubtn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                                        .addComponent(EditOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(AddMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(AddMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(DeleteOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Exitbtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel21)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 25, Short.MAX_VALUE))
-                    .addGroup(SearchOrganizationLayout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(SeachMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(SearchMembertxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 10, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         SearchOrganizationLayout.setVerticalGroup(
             SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SearchOrganizationLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4)
-                        .addComponent(jLabel13))
-                    .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(SearchMembertxt, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(SeachMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel13)
+                    .addComponent(SeachMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SearchMembertxt, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(OrganizationNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -456,9 +459,9 @@ public class NgoGui extends javax.swing.JFrame {
                     .addComponent(SearchMemberlbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel21)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel21)
+                .addGap(11, 11, 11)
                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SearchOrganizationLayout.createSequentialGroup()
                         .addComponent(OrganizationAddressTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -468,21 +471,20 @@ public class NgoGui extends javax.swing.JFrame {
                             .addComponent(OrganizationEmailTxt)))
                     .addGroup(SearchOrganizationLayout.createSequentialGroup()
                         .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(EditOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(AddMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(DeleteOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(EditOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(SearchOrganizationLayout.createSequentialGroup()
                                 .addGap(52, 52, 52)
                                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Exitbtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BackMenubtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(BackMenubtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(AddMemberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(DeleteOrganizationbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(SearchOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OrganizationContactTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OrganizationContactTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         MemberNamelbl.setText("Member LastName");
@@ -508,7 +510,7 @@ public class NgoGui extends javax.swing.JFrame {
         Hiddeneditmember.setLayout(HiddeneditmemberLayout);
         HiddeneditmemberLayout.setHorizontalGroup(
             HiddeneditmemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 104, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         HiddeneditmemberLayout.setVerticalGroup(
             HiddeneditmemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -652,7 +654,7 @@ public class NgoGui extends javax.swing.JFrame {
                                     .addComponent(MemberNamelbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(18, 18, 18)
                                     .addComponent(MemberLastNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(0, 740, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         SearchMemberLayout.setVerticalGroup(
             SearchMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -801,228 +803,12 @@ public class NgoGui extends javax.swing.JFrame {
                 .addGroup(HiddenLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Loginbtn)
                     .addComponent(Wronglbl, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 364, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BackMenubtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
 
         Passwordlbl.getAccessibleContext().setAccessibleName("Usernamelbl");
-
-        AddnewOrganizationbtnsave.setText("Add");
-        AddnewOrganizationbtnsave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddnewOrganizationbtnsaveActionPerformed(evt);
-            }
-        });
-
-        MainMenubtn4.setText("Main Menu");
-        MainMenubtn4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MainMenubtn4ActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setText("Organization Name");
-
-        AddOrganizationNametxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationNametxtActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setText("Contact number");
-
-        jLabel10.setText("Chairperson");
-
-        jLabel11.setText("Address");
-
-        AddOrganizationContacttxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationContacttxtActionPerformed(evt);
-            }
-        });
-
-        AddOrganizationChairpersontxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationChairpersontxtActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setText("Email");
-
-        AddOrganizationEmailtxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationEmailtxtActionPerformed(evt);
-            }
-        });
-
-        OrganizationNamelbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationContactlbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationChairpersonlbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationAddressProvincelbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationEmaillbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        AddOrganizationAddressCitytxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationAddressCitytxtActionPerformed(evt);
-            }
-        });
-
-        jLabel14.setText("City");
-
-        jLabel15.setText("Province");
-
-        jLabel16.setText("Postcode");
-
-        jLabel17.setText("Street Name");
-
-        AddOrganizationAddressProvincetxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationAddressProvincetxtActionPerformed(evt);
-            }
-        });
-
-        AddOrganizationAddressPostcodetxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationAddressPostcodetxtActionPerformed(evt);
-            }
-        });
-
-        AddOrganizationAddressStreettxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddOrganizationAddressStreettxtActionPerformed(evt);
-            }
-        });
-
-        OrganizationAddressPostcodelbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationAddressCitylbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        OrganizationAddressStreetlbl.setForeground(new java.awt.Color(255, 0, 0));
-
-        javax.swing.GroupLayout AddOrganizationLayout = new javax.swing.GroupLayout(AddOrganization);
-        AddOrganization.setLayout(AddOrganizationLayout);
-        AddOrganizationLayout.setHorizontalGroup(
-            AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddOrganizationLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(58, 58, 58)
-                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                                .addComponent(AddOrganizationAddressProvincetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OrganizationAddressProvincelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                                .addComponent(AddOrganizationAddressPostcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OrganizationAddressPostcodelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                                .addComponent(AddOrganizationAddressStreettxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OrganizationAddressStreetlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(AddOrganizationAddressCitytxt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AddOrganizationLayout.createSequentialGroup()
-                                            .addGap(2, 2, 2)
-                                            .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(AddOrganizationNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(AddOrganizationContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addComponent(AddOrganizationEmailtxt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(AddOrganizationChairpersontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(OrganizationEmaillbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(OrganizationContactlbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(OrganizationNamelbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(OrganizationAddressCitylbl, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                                    .addComponent(OrganizationChairpersonlbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                    .addGroup(AddOrganizationLayout.createSequentialGroup()
-                        .addGap(106, 106, 106)
-                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                                .addGap(131, 131, 131)
-                                .addComponent(MainMenubtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(AddnewOrganizationbtnsave, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        AddOrganizationLayout.setVerticalGroup(
-            AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AddOrganizationLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OrganizationNamelbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel5)
-                        .addComponent(AddOrganizationNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddOrganizationLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(OrganizationContactlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AddOrganizationLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(AddOrganizationContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OrganizationEmaillbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(AddOrganizationChairpersontxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel10)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(AddOrganizationEmailtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel12))
-                    .addComponent(OrganizationChairpersonlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(OrganizationAddressCitylbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddOrganizationAddressCitytxt))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OrganizationAddressProvincelbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddOrganizationAddressProvincetxt))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(AddOrganizationAddressStreettxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(OrganizationAddressStreetlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(AddOrganizationAddressPostcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(OrganizationAddressPostcodelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddnewOrganizationbtnsave, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MainMenubtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38))
-        );
 
         MemberFirsyNamelbl1.setText("Member FirstName");
 
@@ -1191,20 +977,20 @@ public class NgoGui extends javax.swing.JFrame {
                             .addComponent(AddMemberHomelbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(AddMemberBirthDatelbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(AddMemberLayout.createSequentialGroup()
-                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AddMemberLayout.createSequentialGroup()
                                 .addComponent(MemberAddresslbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(AddMemberAddresstxt))
+                                .addComponent(AddMemberAddresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AddMemberLayout.createSequentialGroup()
                                 .addComponent(Addmember, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Returnbtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
-                            .addComponent(AddMemberAddresslbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
+                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddMemberAddresslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Returnbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18))
         );
         AddMemberLayout.setVerticalGroup(
             AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1244,29 +1030,260 @@ public class NgoGui extends javax.swing.JFrame {
                         .addComponent(MemberHomelbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(AddMemberHomenumbertxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(AddMemberHomelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(MemberPhonelbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(AddMemberPhonetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(AddMemberPhonelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AddMemberPhonelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AddMemberPhonetxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddMemberPositionlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(MemberAddresslbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(AddMemberPositiontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(MemberAddresslbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddMemberPositiontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AddMemberAddresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MemberAddresslbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddMemberAddresslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AddMemberLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addComponent(AddMemberAddresslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(103, 103, 103))
+                    .addGroup(AddMemberLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddMemberAddresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MemberAddresslbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Addmember, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Returnbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+
+        AddnewOrganizationbtnsave.setText("Add");
+        AddnewOrganizationbtnsave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddnewOrganizationbtnsaveActionPerformed(evt);
+            }
+        });
+
+        MainMenubtn4.setText("Main Menu");
+        MainMenubtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MainMenubtn4ActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Organization Name");
+
+        AddOrganizationNametxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationNametxtActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Contact number");
+
+        jLabel10.setText("Chairperson");
+
+        jLabel11.setText("Address");
+
+        AddOrganizationContacttxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationContacttxtActionPerformed(evt);
+            }
+        });
+
+        AddOrganizationChairpersontxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationChairpersontxtActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setText("Email");
+
+        AddOrganizationEmailtxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationEmailtxtActionPerformed(evt);
+            }
+        });
+
+        OrganizationNamelbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationContactlbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationChairpersonlbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationAddressProvincelbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationEmaillbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        AddOrganizationAddressCitytxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationAddressCitytxtActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("City");
+
+        jLabel15.setText("Province");
+
+        jLabel16.setText("Postcode");
+
+        jLabel17.setText("Street Name");
+
+        AddOrganizationAddressProvincetxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationAddressProvincetxtActionPerformed(evt);
+            }
+        });
+
+        AddOrganizationAddressPostcodetxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationAddressPostcodetxtActionPerformed(evt);
+            }
+        });
+
+        AddOrganizationAddressStreettxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddOrganizationAddressStreettxtActionPerformed(evt);
+            }
+        });
+
+        OrganizationAddressPostcodelbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationAddressCitylbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        OrganizationAddressStreetlbl.setForeground(new java.awt.Color(255, 0, 0));
+
+        javax.swing.GroupLayout AddOrganizationLayout = new javax.swing.GroupLayout(AddOrganization);
+        AddOrganization.setLayout(AddOrganizationLayout);
+        AddOrganizationLayout.setHorizontalGroup(
+            AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(AddOrganizationNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(AddOrganizationChairpersontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(AddOrganizationContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(AddOrganizationEmailtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(AddOrganizationAddressCitytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(OrganizationNamelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OrganizationContactlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OrganizationEmaillbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OrganizationChairpersonlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OrganizationAddressCitylbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(AddOrganizationAddressPostcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(OrganizationAddressPostcodelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                        .addComponent(AddOrganizationAddressStreettxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OrganizationAddressStreetlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                        .addComponent(AddOrganizationAddressProvincetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OrganizationAddressProvincelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                                .addGap(131, 131, 131)
+                                .addComponent(MainMenubtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(AddnewOrganizationbtnsave, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+        AddOrganizationLayout.setVerticalGroup(
+            AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AddOrganizationLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(OrganizationNamelbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(AddOrganizationContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel9))
+                            .addComponent(OrganizationContactlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(13, 13, 13)
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(OrganizationEmaillbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel10)
+                                .addComponent(AddOrganizationChairpersontxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(OrganizationChairpersonlbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel12)
+                                .addComponent(AddOrganizationEmailtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(AddOrganizationNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(AddMemberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Returnbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Addmember, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AddOrganizationLayout.createSequentialGroup()
+                        .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AddOrganizationAddressCitytxt))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                        .addComponent(AddOrganizationAddressProvincetxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddOrganizationLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddOrganizationLayout.createSequentialGroup()
+                        .addComponent(OrganizationAddressCitylbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(OrganizationAddressProvincelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(AddOrganizationAddressStreettxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OrganizationAddressStreetlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(AddOrganizationAddressPostcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(OrganizationAddressPostcodelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AddOrganizationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AddnewOrganizationbtnsave, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MainMenubtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27))
         );
 
         AddAdminbtn.setText("Add");
@@ -1307,7 +1324,7 @@ public class NgoGui extends javax.swing.JFrame {
         AddAdminLayout.setHorizontalGroup(
             AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AddAdminLayout.createSequentialGroup()
-                .addGap(144, 144, 144)
+                .addGap(0, 0, 0)
                 .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1318,31 +1335,28 @@ public class NgoGui extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddAdminLayout.createSequentialGroup()
-                        .addComponent(AdminPasswordtxt)
-                        .addGap(18, 18, 18)
-                        .addComponent(AdminPasswordlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24))
+                        .addComponent(AdminRetypePasswordtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(AdminRetypePasswordlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(AddAdminLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(BackMenubtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AddAdminLayout.createSequentialGroup()
+                        .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(AdminPasswordtxt)
+                            .addComponent(AdminUsernametxt, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddAdminLayout.createSequentialGroup()
-                                .addComponent(AdminRetypePasswordtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(AdminRetypePasswordlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddAdminLayout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(BackMenubtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddAdminLayout.createSequentialGroup()
-                                .addComponent(AdminUsernametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(AdminUsernamelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(24, Short.MAX_VALUE))))
+                            .addComponent(AdminPasswordlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AdminUsernamelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         AddAdminLayout.setVerticalGroup(
             AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AddAdminLayout.createSequentialGroup()
                 .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddAdminLayout.createSequentialGroup()
-                        .addGap(105, 105, 105)
+                        .addGap(108, 108, 108)
                         .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AdminUsernametxt)))
@@ -1364,72 +1378,33 @@ public class NgoGui extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(AddAdminLayout.createSequentialGroup()
                         .addComponent(AdminRetypePasswordlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(AddAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(BackMenubtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AddAdminbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(138, 138, 138))))
+                        .addGap(147, 147, 147))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 692, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(MainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(SearchOrganization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(454, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(SearchMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(HiddenLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(25, 25, 25)
-                    .addComponent(AddOrganization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(574, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 252, Short.MAX_VALUE)
-                    .addComponent(AddAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 253, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(173, 173, 173)
-                    .addComponent(AddMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(173, 173, 173)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(SearchOrganization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(11, 11, 11)
-                    .addComponent(SearchMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(11, 11, 11)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(11, 11, 11)
-                    .addComponent(HiddenLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(11, 11, 11)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(17, 17, 17)
-                    .addComponent(AddOrganization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(187, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(SearchMember, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1437,9 +1412,58 @@ public class NgoGui extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(52, 52, 52)
-                    .addComponent(AddMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(53, 53, 53)))
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(HiddenLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(AddMember, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(AddOrganization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 535, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(MainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SearchOrganization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(63, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(SearchMember, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(AddAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(HiddenLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(AddMember, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(AddOrganization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
@@ -1797,6 +1821,8 @@ public class NgoGui extends javax.swing.JFrame {
         String MemberName;
         int count = 0;
         int  count1 = 16;
+        int countposition = 0;
+        String Position;
         ArrayList<String> list = new ArrayList<String>();
         if (EditOrganization == false){
             JOptionPane.showMessageDialog(null, "Edit Mode");
@@ -1844,7 +1870,16 @@ public class NgoGui extends javax.swing.JFrame {
                    list.add(BrEO.readLine());
                    list.add(BrEO.readLine());
                    list.add(BrEO.readLine());
-                   list.add(BrEO.readLine());
+                   Position = BrEO.readLine();
+                   if((countposition != 4)&&(!Position.equalsIgnoreCase("Member"))){
+                   list.add(Position);
+                   countposition++;
+                   }else if((countposition == 4)&&(!MemberPositionTxt.getText().equalsIgnoreCase("Member"))){
+                       JOptionPane.showMessageDialog(null,"There already 4 executive member");
+                       break;
+                   }else if(Position.equalsIgnoreCase("Member")){
+                   list.add(Position);
+                   }
                    count1 += 10;
                    }
                    }
@@ -1875,201 +1910,6 @@ public class NgoGui extends javax.swing.JFrame {
     private void LoginbtnKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LoginbtnKeyTyped
         // TODO add your handling code here:
     }//GEN-LAST:event_LoginbtnKeyTyped
-
-    private void OrganizationContactTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationContactTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OrganizationContactTxtActionPerformed
-
-    private void OrganizationEmailTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationEmailTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OrganizationEmailTxtActionPerformed
-
-    private void AddMemberbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddMemberbtnActionPerformed
-        TempOrganizationName = OrganizationNameTxt.getText();
-        MainMenu.setVisible(false);
-        HiddenLogin.setVisible(false);
-        SearchOrganization.setVisible(false);
-        SearchMember.setVisible(false);
-        AddOrganization.setVisible(false);
-        AddMember.setVisible(true);
-        AddAdmin.setVisible(false);
-    }//GEN-LAST:event_AddMemberbtnActionPerformed
-
-    private void EditOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditOrganizationbtnActionPerformed
-        String OrganizationName;
-        int count = 0;
-        int  count1 = 5;
-        Find = false;
-        if (EditOrganization == false){
-            JOptionPane.showMessageDialog(null, "Success");
-            Whitelist();
-            EditOrganization = true;
-            TempOrganizationName = OrganizationNameTxt.getText();
-        }else if(EditOrganization == true){
-           try {BufferedReader brCF = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
-                while((OrganizationName = brCF.readLine()) != null){
-                    if((OrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())&&(!TempOrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())))){
-                        Find = false;
-                        JOptionPane.showMessageDialog(null,"Organziation Name already exist");
-                       }else{
-                        Find = true;
-                    }
-                }
-                if(Find == true){ 
-                BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
-                BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));    
-                    while((OrganizationName = brD.readLine()) != null){
-                        //If Match Just Continue
-                        if(OrganizationName.equalsIgnoreCase(TempOrganizationName) ){
-                            bwTemp.write(OrganizationNameTxt.getText());
-                            bwTemp.newLine();
-                        }else{
-                            bwTemp.write(OrganizationName);
-                            bwTemp.newLine();
-                        }
-                    }
-                    brD.close();
-                    bwTemp.close();
-                    
-                    BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
-                    BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
-                    while((OrganizationName = brTemp.readLine()) != null){
-                            writeAgain.write(OrganizationName);
-                            writeAgain.newLine();
-                    }
-                    brTemp.close();
-                    writeAgain.close();
-                    ArrayList<String> list = new ArrayList<String>();
-                   BufferedReader BrEO = new BufferedReader(new FileReader("C:\\NGO Project\\"+TempOrganizationName+".txt"));
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   BrEO.readLine();
-                   list.add(OrganizationIdTxt.getText());
-                   list.add(OrganizationNameTxt.getText());
-                   list.add(OrganizationEmailTxt.getText());
-                   list.add(OrganizationChairpersonTxt.getText());
-                   list.add(OrganizationContactTxt.getText());
-                   list.add(OrganizationAddressTxt.getText());
-                   while ((OrganizationName = BrEO.readLine())!= null){
-                   list.add(OrganizationName);
-                   count1++;
-                   }
-                   BrEO.close();
-                   BufferedWriter BwEOT= new BufferedWriter(new FileWriter("C:\\NGO Project\\"+OrganizationNameTxt.getText()+".txt"));
-                   while (count != count1){
-                   BwEOT.write(list.get(count));
-                   BwEOT.newLine();
-                   count++;
-                   }
-                   list.clear();
-                   BwEOT.close();
-                   EditOrganization = false;
-                   Blacklist();
-                   JOptionPane.showMessageDialog(null, "Success");
-                   BufferedWriter BwD= new BufferedWriter(new FileWriter("C:\\NGO Project\\Delete.txt"));
-                   if(!TempOrganizationName.equals(OrganizationNameTxt.getText())){
-                   BwD.write(TempOrganizationName);
-                   BwD.newLine();
-                   }else{
-                   }
-                   BwD.close();
-                }
-        } catch (FileNotFoundException ex) {
-                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
-                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-            }
-    }
-    }//GEN-LAST:event_EditOrganizationbtnActionPerformed
-
-    private void DeleteOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteOrganizationbtnActionPerformed
-        String OrganizationName;
-        String OrganizationId;
-        int a = JOptionPane.showConfirmDialog(null, "Delete This Organization Data?");
-        if(a == 0){
-           try {
-                BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
-                BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt", true));    
-                    while((OrganizationId = brD.readLine()) != null){
-                        //If Match Just Continue
-                        OrganizationName = brD.readLine();
-                        if((OrganizationId.equalsIgnoreCase(OrganizationIdTxt.getText()))||(OrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())) ){
-                        continue;
-                        }else{
-                            bwTemp.write(OrganizationId);
-                            bwTemp.newLine();
-                            bwTemp.write(OrganizationName);
-                            bwTemp.newLine();
-                        }
-                    }
-                    bwTemp.close();
-                    BufferedWriter eraseFile = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
-                    eraseFile.close();
-
-                    BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
-                    BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt", true));
-
-                    while((OrganizationName = brTemp.readLine()) != null){
-                            writeAgain.write(OrganizationName);
-                            writeAgain.newLine();
-                    }
-                    writeAgain.close();
-                    BufferedWriter eraseFileTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));
-                    eraseFileTemp.close();
-                    JOptionPane.showMessageDialog(null, "Delete Data Successful!");
-                    BufferedWriter BwDelete = new BufferedWriter(new FileWriter("C:\\NGO Project\\Delete.txt",true));
-                    BwDelete.close();
-        } catch (FileNotFoundException ex) {
-                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
-                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-            }   
-        }
-
-
-    }//GEN-LAST:event_DeleteOrganizationbtnActionPerformed
-
-    private void SeachMemberbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeachMemberbtnActionPerformed
-        try {
-            FindMember();
-        } catch (IOException ex) {
-            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        if(Find == true){
-        if(adminauthorization == false){
-            MainMenu.setVisible(false);
-            HiddenLogin.setVisible(false);
-            SearchOrganization.setVisible(false);
-            SearchMember.setVisible(true);
-            EditMember.setVisible(false);
-            AddOrganization.setVisible(false);
-            AddMember.setVisible(false);
-            AddAdmin.setVisible(false);
-        }
-        else if(adminauthorization == true){
-            MainMenu.setVisible(false);
-            HiddenLogin.setVisible(false);
-            SearchOrganization.setVisible(false);
-            SearchMember.setVisible(true);
-            EditMember.setVisible(true);
-            AddOrganization.setVisible(false);
-            AddMember.setVisible(false);
-            AddAdmin.setVisible(false);
-            }
-        }
-    }//GEN-LAST:event_SeachMemberbtnActionPerformed
-
-    private void BackMenubtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackMenubtn1ActionPerformed
-        Backtomainmenu();
-    }//GEN-LAST:event_BackMenubtn1ActionPerformed
-
-    private void Exitbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exitbtn2ActionPerformed
-        DeleteFile();
-        System.exit(0);
-    }//GEN-LAST:event_Exitbtn2ActionPerformed
 
     private void MemberPhoneTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MemberPhoneTxtActionPerformed
         // TODO add your handling code here:
@@ -2147,10 +1987,6 @@ public class NgoGui extends javax.swing.JFrame {
         AddMember.setVisible(false);
         AddAdmin.setVisible(true);
     }//GEN-LAST:event_AddAdminbtn1ActionPerformed
-
-    private void SearchMembertxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchMembertxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SearchMembertxtActionPerformed
 
     private void BackMenubtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackMenubtn2ActionPerformed
         Backtomainmenu();
@@ -2337,10 +2173,6 @@ public class NgoGui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_AddOrganizationAddressStreettxtActionPerformed
 
-    private void OrganizationNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationNameTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OrganizationNameTxtActionPerformed
-
     private void AddMemberBirthdatetxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddMemberBirthdatetxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AddMemberBirthdatetxtActionPerformed
@@ -2393,7 +2225,7 @@ public class NgoGui extends javax.swing.JFrame {
                     if((countPosition != 4) &&!Position.equalsIgnoreCase("Member") ){
                      List.add(Position);
                      countPosition++;
-                    }else if((countPosition == 4) && !Position.equalsIgnoreCase("Member")){
+                    }else if((countPosition >= 4) && (!AddMemberPositiontxt.getText().equalsIgnoreCase("Member"))){
                         JOptionPane.showMessageDialog(null, "Sorry only 4 executive Member are allowed");
                         Find = false;
                         AddMemberPositiontxt.setText("Only 4 executive Member are allowed");
@@ -2509,6 +2341,208 @@ public class NgoGui extends javax.swing.JFrame {
     private void MemberLastNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MemberLastNameTxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MemberLastNameTxtActionPerformed
+
+    private void OrganizationContactTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationContactTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OrganizationContactTxtActionPerformed
+
+    private void OrganizationEmailTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationEmailTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OrganizationEmailTxtActionPerformed
+
+    private void OrganizationNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrganizationNameTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OrganizationNameTxtActionPerformed
+
+    private void AddMemberbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddMemberbtnActionPerformed
+        TempOrganizationName = OrganizationNameTxt.getText();
+        MainMenu.setVisible(false);
+        HiddenLogin.setVisible(false);
+        SearchOrganization.setVisible(false);
+        SearchMember.setVisible(false);
+        AddOrganization.setVisible(false);
+        AddMember.setVisible(true);
+        AddAdmin.setVisible(false);
+    }//GEN-LAST:event_AddMemberbtnActionPerformed
+
+    private void EditOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditOrganizationbtnActionPerformed
+        String OrganizationName;
+        int count = 0;
+        int  count1 = 5;
+        Find = false;
+        if (EditOrganization == false){
+            JOptionPane.showMessageDialog(null, "Success");
+            Whitelist();
+            EditOrganization = true;
+            TempOrganizationName = OrganizationNameTxt.getText();
+        }else if(EditOrganization == true){
+            try {BufferedReader brCF = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
+                while((OrganizationName = brCF.readLine()) != null){
+                    if((OrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())&&(!TempOrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())))){
+                        Find = false;
+                        JOptionPane.showMessageDialog(null,"Organziation Name already exist");
+                    }else{
+                        Find = true;
+                    }
+                }
+                if(Find == true){
+                    BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
+                    BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));
+                    while((OrganizationName = brD.readLine()) != null){
+                        //If Match Just Continue
+                        if(OrganizationName.equalsIgnoreCase(TempOrganizationName) ){
+                            bwTemp.write(OrganizationNameTxt.getText());
+                            bwTemp.newLine();
+                        }else{
+                            bwTemp.write(OrganizationName);
+                            bwTemp.newLine();
+                        }
+                    }
+                    brD.close();
+                    bwTemp.close();
+
+                    BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
+                    BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
+                    while((OrganizationName = brTemp.readLine()) != null){
+                        writeAgain.write(OrganizationName);
+                        writeAgain.newLine();
+                    }
+                    brTemp.close();
+                    writeAgain.close();
+                    ArrayList<String> list = new ArrayList<String>();
+                    BufferedReader BrEO = new BufferedReader(new FileReader("C:\\NGO Project\\"+TempOrganizationName+".txt"));
+                        BrEO.readLine();
+                        BrEO.readLine();
+                        BrEO.readLine();
+                        BrEO.readLine();
+                        BrEO.readLine();
+                        BrEO.readLine();
+                        list.add(OrganizationIdTxt.getText());
+                        list.add(OrganizationNameTxt.getText());
+                        list.add(OrganizationEmailTxt.getText());
+                        list.add(OrganizationChairpersonTxt.getText());
+                        list.add(OrganizationContactTxt.getText());
+                        list.add(OrganizationAddressTxt.getText());
+                        while ((OrganizationName = BrEO.readLine())!= null){
+                            list.add(OrganizationName);
+                            count1++;
+                        }
+                        BrEO.close();
+                        BufferedWriter BwEOT= new BufferedWriter(new FileWriter("C:\\NGO Project\\"+OrganizationNameTxt.getText()+".txt"));
+                            while (count != count1){
+                                BwEOT.write(list.get(count));
+                                BwEOT.newLine();
+                                count++;
+                            }
+                            list.clear();
+                            BwEOT.close();
+                            EditOrganization = false;
+                            Blacklist();
+                            JOptionPane.showMessageDialog(null, "Success");
+                            BufferedWriter BwD= new BufferedWriter(new FileWriter("C:\\NGO Project\\Delete.txt"));
+                            if(!TempOrganizationName.equals(OrganizationNameTxt.getText())){
+                                BwD.write(TempOrganizationName);
+                                BwD.newLine();
+                            }else{
+                            }
+                            BwD.close();
+                        }
+                    } catch (FileNotFoundException ex) {
+                        Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (IOException ex) {
+                        Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+    }//GEN-LAST:event_EditOrganizationbtnActionPerformed
+
+    private void DeleteOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteOrganizationbtnActionPerformed
+        String OrganizationName;
+        String OrganizationId;
+        int a = JOptionPane.showConfirmDialog(null, "Delete This Organization Data?");
+        if(a == 0){
+            try {
+                BufferedReader brD = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationList.txt"));
+                BufferedWriter bwTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt", true));
+                while((OrganizationId = brD.readLine()) != null){
+                    //If Match Just Continue
+                    OrganizationName = brD.readLine();
+                    if((OrganizationId.equalsIgnoreCase(OrganizationIdTxt.getText()))||(OrganizationName.equalsIgnoreCase(OrganizationNameTxt.getText())) ){
+                        continue;
+                    }else{
+                        bwTemp.write(OrganizationId);
+                        bwTemp.newLine();
+                        bwTemp.write(OrganizationName);
+                        bwTemp.newLine();
+                    }
+                }
+                bwTemp.close();
+                BufferedWriter eraseFile = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt"));
+                eraseFile.close();
+
+                BufferedReader brTemp = new BufferedReader(new FileReader("C:\\NGO Project\\OrganizationListtemp.txt"));
+                BufferedWriter writeAgain = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationList.txt", true));
+
+                while((OrganizationName = brTemp.readLine()) != null){
+                    writeAgain.write(OrganizationName);
+                    writeAgain.newLine();
+                }
+                writeAgain.close();
+                BufferedWriter eraseFileTemp = new BufferedWriter(new FileWriter("C:\\NGO Project\\OrganizationListtemp.txt"));
+                eraseFileTemp.close();
+                JOptionPane.showMessageDialog(null, "Delete Data Successful!");
+                BufferedWriter BwDelete = new BufferedWriter(new FileWriter("C:\\NGO Project\\Delete.txt",true));
+                BwDelete.close();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+    }//GEN-LAST:event_DeleteOrganizationbtnActionPerformed
+
+    private void SearchMembertxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchMembertxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchMembertxtActionPerformed
+
+    private void SeachMemberbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeachMemberbtnActionPerformed
+        try {
+            FindMember();
+        } catch (IOException ex) {
+            Logger.getLogger(NgoGui.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        if(Find == true){
+            if(adminauthorization == false){
+                MainMenu.setVisible(false);
+                HiddenLogin.setVisible(false);
+                SearchOrganization.setVisible(false);
+                SearchMember.setVisible(true);
+                EditMember.setVisible(false);
+                AddOrganization.setVisible(false);
+                AddMember.setVisible(false);
+                AddAdmin.setVisible(false);
+            }
+            else if(adminauthorization == true){
+                MainMenu.setVisible(false);
+                HiddenLogin.setVisible(false);
+                SearchOrganization.setVisible(false);
+                SearchMember.setVisible(true);
+                EditMember.setVisible(true);
+                AddOrganization.setVisible(false);
+                AddMember.setVisible(false);
+                AddAdmin.setVisible(false);
+            }
+        }
+    }//GEN-LAST:event_SeachMemberbtnActionPerformed
+
+    private void BackMenubtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackMenubtn1ActionPerformed
+        Backtomainmenu();
+    }//GEN-LAST:event_BackMenubtn1ActionPerformed
+
+    private void Exitbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exitbtn2ActionPerformed
+        DeleteFile();
+        System.exit(0);
+    }//GEN-LAST:event_Exitbtn2ActionPerformed
 
     public static void main(String args[]) {
             
